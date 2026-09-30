@@ -1,6 +1,6 @@
 services:
   db:
-    image: mariadb:12.3
+    image: mariadb:12.3.3
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -20,8 +20,11 @@ services:
       WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
       WORDPRESS_DB_USER: ${MYSQL_USER}
       WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - wordpress_data:/var/www/html
     depends_on:
       - db
 
 volumes:
   db_data:
+  wordpress_data:

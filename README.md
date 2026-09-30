@@ -1,4 +1,4 @@
-# wordpress-docker
+# WordPress Docker
 
 Docker Compose で WordPress + MariaDB のローカル環境を構築するプロジェクトです。
 
@@ -18,8 +18,8 @@ docker compose up -d
 
 ブラウザで以下にアクセスします。
 
-- WordPress: http://localhost:8080
-- 管理画面: http://localhost:8080/wp-admin
+- [WordPress](http://localhost:8080)
+- [管理画面](http://localhost:8080/wp-admin)
 
 ## Stop
 
